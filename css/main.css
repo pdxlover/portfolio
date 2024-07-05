@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+/*모바일*/
+
+/*
+html{
+    background: url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
+}*/
+#wrap{
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+}
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+header h1 {
+    height: 70px;
+    width: 70px;
+}
+header h1 a img{
+    width: 100%;
+    height: 100%;
+}
+.header_wrap .drop_btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+.header_wrap .drop_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+.mgnb_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    padding: 60px 60px;
+    
+    background: #fff url(../img/bg_img.jpg) no-repeat center top / cover;
+}
+.mgnb_wrap .close_btn{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.mgnb_wrap .close_btn img{
+    width: 100%;
+}
+
+.mgnb{
+margin-top: 50px;
+
+}
+.mgnb li{
+    padding: 20px 0;
+}
+.mgnb li a{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*인트로 시작*/
+.inner{
+    padding: 0 20px;
+}
+.name{
+    padding: 50px;
+    text-align: center;
+}
+.name p{
+    font-size: 32px;
+    font-weight: bold;
+}
+.name .sub_name{
+    font-size: 20px;
+}
+.edu{
+    margin: 60px 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.edu .title{
+    font-size: 25px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.edu_box{
+    display: flex;
+    margin-bottom: 20px;
+    
+}
+.edu_box .year{
+    font-size: 16px;
+    
+    font-weight: bold;
+    margin-right: 20px;
+}
+.edu_box .school p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.edu_box .school span{
+    font-size: 12px;
+}
+
+.certi{
+    font-family: "Noto Sans KR", sans-serif;
+    margin-bottom: 60px;
+    text-align: right;
+}
+.certi .title{
+    font-size: 25px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.certi  li{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.skill{
+    margin-bottom: 60px;
+}
+.skill .title{
+    font-size: 25px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.skill_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill_box li{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+.project{
+    margin: 80px 0;
+}
+.project .title{
+    font-size: 25px;
+    font-family: "Noto Serif KR", serif;
+    font-weight: bold;
+    margin: 40px ;
+    text-align: right;
+}
+
+.mobile{
+    width: 80%;
+    margin: 0 auto;
+}
+.mobile .img_box{
+    margin-bottom: 80px;
+    border-radius: 5%;
+
+}
+.mobile .box{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.mobile .box .box_border{
+    width: 95%;
+    height: 96%;
+    border: 2px solid;
+    border-image:linear-gradient(to  bottom right , rgb(255, 248, 224),rgb(105, 145, 255));
+    border-image-slice:1;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mobile .box a{
+    height: 100%;
+    width: 100%;
+
+    display: block;
+}
+.mobile .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile .tit{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: all 0.5s;
+    text-align: center;
+    font-weight: bold;
+}
+.mobile .tit.active{
+    opacity: 1;
+    transform: translate(-50%,-50%);
+}
+.mobile .tit .name{
+    font-size: 48px;
+}
+.mobile .tit .counter{
+    font-size: 16px;
+}
+
+#pc{
+    display: none;
+}
+
+.go_top{
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    position: fixed;
+    bottom: 10%;
+    right: 40px;
+    background: #000 url(../img/go_top.png) no-repeat center center / 30px auto;
+    font-size: 0;
+    color: transparent;
+    border-radius: 50%;
+    z-index: 990;
+    
+}
+
+footer{
+    padding: 40px 0;
+    background-color:#222;
+    
+}
+.f_inner{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.f_inner h2 a{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+}
+.f_inner h2 a img{
+    width: 100%;
+    height: 100%;
+}
+.f_inner .f_info{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0;
+}
+.f_inner .f_info .email{
+    font-weight: bold;
+}
+.f_inner .f_info p{
+    margin-bottom: 10px;
+}
+.f_inner .f_sns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.f_inner .f_sns a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.f_inner .f_sns a img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*768 이상*/
+    @media screen and (min-width:768px) {
+        html{
+            background: url(../img/bg_img.jpg) no-repeat center top / cover;
+        }
+
+        .mobile{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .mobile .box{
+            height: 800px;
+        }
+
+        header h1 {
+            height: 80px;
+            width: 80px;
+        }
+
+
+        .edu .title, .certi .title, .skill .title, .project .title{
+            font-size: 40px;
+        }
+
+
+        .mobile .tit .name{
+            font-size: 80px;
+        }
+        .mobile .tit .counter{
+            font-size: 25px;
+        }
+
+
+
+        .edu_box .year{
+            font-size: 20px;
+            
+
+        }
+        .edu_box .school p{
+            font-size: 20px;
+
+        }
+        .edu_box .school span{
+            font-size: 16px;
+        }
+
+        .certi  li{
+            font-size: 20px;
+        }
+        .skill_box li{
+            font-size: 30px;
+        }
+
+        .project{
+            margin: 100px 0;
+        }
+        
+
+
+
+        .f_inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .f_inner h2 a{
+            width: 100px;
+            height: 100px;
+        }
+
+        .f_inner .f_sns a{
+            width: 40px;
+            height: 40px;
+        }
+     
+       
+        
+    }
+/*1200 이상*/
+    @media screen and (min-width:1200px) {
+        html{
+            background: url(../img/bg_img.jpg) no-repeat center top / cover;
+        }
+
+        header h1 {
+            height: 100px;
+            width: 100px;
+        }
+
+        .mgnb_wrap{
+            padding-left: 150px;
+        }
+        .mgnb{
+            width: 50%;
+        }
+
+        .mgnb li a{display: block;}
+        .mgnb li:hover a{
+            animation: on 0.5s backwards;
+        }
+
+        #mobile{
+            display: none;
+        }
+        #pc{
+            display: block;
+            padding-top: 50px;
+        }
+
+
+        /*pc버전 슬라이더 시작*/
+       
+        .pc_inner{
+            width: 1024px;
+            margin: 60px auto;
+            position: relative;
+            height: 2750px;
+        }
+        .pc_inner .pc_img_box{
+            width: 49%;
+            position: absolute;
+        }
+       
+        .pc_section1{
+            top: 0;
+            left: 0;
+        }
+        .pc_section2{
+            top: 450px;
+            right: 0;
+        }
+        .pc_section2 .pc_box{
+            background: url(../img/pc_img_bg_02.png) no-repeat center / cover;
+        }
+        .pc_section3{
+            top: 1070px;
+            right: 0;
+            width: 60% !important; 
+        }
+        .pc_section4{
+            top: 1490px;
+            left: 0;
+        }
+        .pc_section5{
+            top: 1700px;
+            right: 0;
+        }
+        .pc_section6{
+            top: 2320px;
+            left: 0;
+            width: 60% !important;
+        }
+        .pc_inner .pc_box{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+
+        }
+        .pc_inner .pc_box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+            transform: scale(1);
+            transition: all 0.3s;
+        }
+        .pc_inner .pc_box img:hover{
+            opacity: 1;
+            transform: scale(1.2);
+        }
+        .pc_inner .hor{
+            height: 400px;
+
+        }
+        .pc_inner .pc_tit{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            transition: all 0.5s;
+            z-index: 99;
+            text-align: center;
+            font-weight: bold;
+            
+        }
+        .pc_inner .pc_tit a{
+            position: relative;
+            z-index: 9;
+            cursor: pointer;
+        }
+        .pc_inner .pc_box:hover + .pc_tit{
+            opacity: 1;
+        }
+        .pc_inner .pc_tit .pc_tit_bg{
+            width: 100%;
+            height: 80px;
+            background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
+            position: absolute;
+            top: 30px;
+            left: 0;
+        }
+        .pc_img_box:hover .pc_tit_bg{
+            animation: tit_bg 0.3s backwards ease-out 0.1s;
+        }
+        .pc_inner .pc_tit .pc_name{
+            font-size: 60px;
+            
+        }
+        .pc_inner .pc_tit .pc_counter{
+            font-size: 16px;
+            
+        }
+
+        /*pc버전 슬라이더 시작*/
+        .myname{
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: right;
+        }
+        .myname p{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .myname .sub_myname{
+            font-size: 14px;
+        }
+        .pc_edu{
+            position: absolute;
+            top: 120px;
+            right: 0;
+            display: block;
+        }
+        .pc_title{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .pc_edu_box{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-family:  "Noto Sans KR", sans-serif;
+            margin-bottom: 15px;
+        }
+        .pc_edu_box .year{
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .pc_edu_box .school{
+            text-align: right;
+        }
+        .pc_edu_box .school p{
+            font-weight: bold;
+        }
+        .pc_edu_box .school span{
+            font-size: 11px;
+        }
+
+        .pc_cert{
+            position: absolute;
+            top: 2350px;
+            right: 0;
+          
+        }
+        .cert_title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align:right;
+        }
+        .pc_cert_box{
+            font-size: 14px;
+            font-weight: bold;
+            font-family:  "Noto Sans KR", sans-serif;
+            margin-bottom: 40px;
+            text-align: right;
+        }
+        .pc_cert_box li{
+            margin-bottom: 15px;
+        }
+        .pc_skill{
+            position: absolute;
+            top:700px;
+            left: 0;
+     
+        }
+        .skill_title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .pc_skill_box li{
+            position: relative;
+            width: 200px;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            z-index: 9;
+            cursor: pointer;
+        }
+      
+       
+        .pc_skill_box li:hover .skill_bg{
+            height: 20px;
+            background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(217, 227, 255));
+            position: absolute;
+            top: 20px;
+            left: 0;
+            z-index: -9;
+            animation: tit_bg 0.3s backwards ease-out 0.1s;
+        }
+        .pc_skill_box .ps:hover .skill_bg{
+            width: 100%;
+        }
+        .pc_skill_box .ai:hover .skill_bg{
+            width: 100%;
+        }
+        .pc_skill_box .id:hover .skill_bg{
+            width: 90%;
+        }
+        .pc_skill_box .ae:hover .skill_bg{
+            width: 70%;
+        }
+        .pc_skill_box .pr:hover .skill_bg{
+            width: 80%;
+        }
+        .pc_skill_box .fg:hover .skill_bg{
+            width: 100%;
+        }
+        .pc_skill_box .bl:hover .skill_bg{
+            width: 80%;
+        }
+        .pc_skill_box .un:hover .skill_bg{
+            width: 50%;
+        }
+      
+
+
+        .f_inner{
+            width: 1024px;
+            margin: 0 auto;
+        }
+    
+
+       
+        
+        
+            
+    }

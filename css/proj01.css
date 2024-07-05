@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*모바일*/
+html{
+    background: url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
+}
+#content{
+    padding: 60px 20px;
+}
+#top_wrap{
+    width: 60%;
+    margin: 0 auto;
+}
+#top_wrap > div{
+    margin-bottom: 80px;
+    text-align: center;
+   
+  
+}
+#top_wrap .category{
+    font-size: 16px;
+    font-weight: bold;
+}
+#top_wrap .proj_tit{
+    font-size: 64px;
+    font-weight: bold;
+}
+#top_wrap .Contribution{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+}
+#top_wrap .overview{
+    font-size: 16px;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.8;
+}
+#top_wrap .overview .moca_bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bottom_wrap{
+    width: 100%;
+
+}
+#bottom_wrap .main_img{
+    display: none;
+}
+#bottom_wrap .logo_img{
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+}
+#bottom_wrap .logo_img img{
+    width: 100%;
+    height: auto;
+
+}
+.proj01_mobile_img{
+    width: 100%;
+}
+.proj01_mobile_img img{
+    width: 100%;
+
+}
+.proj01_pc_img{
+    display: none;
+}
+
+.page_btn{
+    padding: 0 0 60px 0;
+    display: flex;
+    justify-content: center;
+}
+.page_btn a{
+    display: block;
+    padding: 20px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.page_btn .prev{
+    margin-right: 20px;
+    background: url(../img/prev_btn_gray.png) no-repeat 20% center / 30px auto;
+    color: #C4C4C4;
+}
+.page_btn .next{
+    background: url(../img/next_btn.png) no-repeat 80% center / 30px auto;
+    transition: all 0.3s;
+}
+
+
+/*768 이상*/
+@media screen and (min-width:768px) {
+    html{
+        background: #fff url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
+    }
+    .proj01_mobile_img{
+        display: none;
+    }
+    #bottom_wrap .main_img{
+        display: block;
+        width: 100%;
+    }
+    #bottom_wrap .main_img img{
+        width: 100%;
+        height: auto;
+    }
+    .proj01_pc_img{
+        display: block;
+        width: 100%;
+    }
+    .proj01_pc_img img{
+        width: 100%;
+    }
+}
+
+
+/*1200 이상*/
+@media screen and (min-width:1200px) {
+    .proj_inner{
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .page_btn .next:hover{
+        background: url(../img/next_btn_long.png) no-repeat 98% center / 55px auto;
+    }
+
+}

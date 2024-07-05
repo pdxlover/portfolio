@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*모바일*/
+html{
+    background: url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
+}
+
+.page_btn .prev{
+    margin-right: 60px;
+    background: url(../img/prev_btn.png) no-repeat 20% center / 30px auto;
+    transition: all 0.3s;
+}
+.page_btn .next{
+    background: url(../img/next_btn.png) no-repeat 80% center / 30px auto;
+    transition: all 0.3s;
+}
+
+
+.site_link a{
+    display: block;
+    margin: 0 auto;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+
+/*768 이상*/
+@media screen and (min-width:768px) {
+    html{
+        background: #fff url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
+    }
+}
+
+
+
+/*1200 이상*/
+@media screen and (min-width:1200px) {
+    .page_btn .prev:hover{
+        background: url(../img/prev_btn_long.png) no-repeat 2% center / 55px auto;
+    }
+
+    .page_btn .next:hover{
+        background: url(../img/next_btn_long.png) no-repeat 98% center / 55px auto;
+    }
+  
+}
