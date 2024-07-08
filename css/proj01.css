@@ -20,6 +20,7 @@ html{
 #top_wrap .category{
     font-size: 16px;
     font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
 }
 #top_wrap .proj_tit{
     font-size: 64px;
@@ -68,6 +69,7 @@ html{
     display: none;
 }
 
+/*페이지 버튼 공통*/
 .page_btn{
     padding: 0 0 60px 0;
     display: flex;
@@ -80,14 +82,22 @@ html{
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
 }
+.page_btn .first_prev{
+    background: #C4C4C4 url(../img/prev_btn_gray.png) no-repeat 20% center / 30px auto;
+    color: #C4C4C4;
+}
 .page_btn .prev{
     margin-right: 20px;
     background: url(../img/prev_btn_gray.png) no-repeat 20% center / 30px auto;
-    color: #C4C4C4;
 }
 .page_btn .next{
     background: url(../img/next_btn.png) no-repeat 80% center / 30px auto;
     transition: all 0.3s;
+}
+.page_btn .next_last{
+    background: #C4C4C4 url(../img/next_btn_gray.png) no-repeat 80% center / 30px auto;
+    color: #C4C4C4;
+    cursor: none;
 }
 
 
@@ -122,10 +132,20 @@ html{
     .proj_inner{
         width: 1024px;
         margin: 0 auto;
-    }
 
+    }
+    .page_btn .prev:hover{
+        background: url(../img/prev_btn_long.png) no-repeat 2% center / 55px auto;
+    }
     .page_btn .next:hover{
         background: url(../img/next_btn_long.png) no-repeat 98% center / 55px auto;
     }
+    .page_btn .first_prev{
+        display: none;
+    }
+    .page_btn .next_last{
+        display: none;
+    }
+   
 
 }
