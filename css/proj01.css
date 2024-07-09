@@ -1,151 +1,305 @@
 @charset "utf-8";
 
 /*모바일*/
-html{
+html {
     background: url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
 }
-#content{
+
+#content {
     padding: 60px 20px;
 }
-#top_wrap{
+
+#top_wrap {
     width: 60%;
     margin: 0 auto;
 }
-#top_wrap > div{
-    margin-bottom: 80px;
+
+#top_wrap>div {
+    margin-bottom: 40px;
     text-align: center;
-   
-  
+
+
 }
-#top_wrap .category{
+
+#top_wrap .category {
     font-size: 16px;
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
 }
-#top_wrap .proj_tit{
-    font-size: 64px;
+
+#top_wrap .proj_tit {
+    font-size: 42px;
     font-weight: bold;
+    word-wrap: break-word;
 }
-#top_wrap .Contribution{
+
+#top_wrap .Contribution {
     font-size: 16px;
     font-family: "Noto Sans KR", sans-serif;
     font-weight: bold;
 }
-#top_wrap .overview{
+
+#top_wrap .overview {
     font-size: 16px;
     font-family: "Noto Sans KR", sans-serif;
     line-height: 1.8;
 }
-#top_wrap .overview .moca_bold{
+
+#top_wrap .overview .moca_bold {
     font-weight: bold;
     font-size: 20px;
 }
 
-#bottom_wrap{
+#bottom_wrap {
     width: 100%;
 
 }
-#bottom_wrap .main_img{
-    display: none;
+
+#bottom_wrap .main_img {
+    display: block;
+    width: 100%;
 }
-#bottom_wrap .logo_img{
+
+#bottom_wrap .main_img img {
+    width: 100%;
+    height: auto;
+}
+
+#bottom_wrap .logo_img {
     width: 80%;
     height: auto;
     margin: 50px auto;
 }
-#bottom_wrap .logo_img img{
+
+#bottom_wrap .logo_img img {
     width: 100%;
     height: auto;
 
 }
-.proj01_mobile_img{
+
+.proj01_mobile_img {
     width: 100%;
 }
-.proj01_mobile_img img{
+
+.proj01_mobile_img img {
     width: 100%;
 
 }
-.proj01_pc_img{
+
+.proj01_pc_img {
     display: none;
 }
 
 /*페이지 버튼 공통*/
-.page_btn{
+.page_btn {
     padding: 0 0 60px 0;
     display: flex;
     justify-content: center;
 }
-.page_btn a{
+
+.page_btn a {
     display: block;
     padding: 20px 60px;
     font-size: 18px;
     font-weight: bold;
     font-family: "Noto Sans KR", sans-serif;
 }
-.page_btn .first_prev{
-    background: #C4C4C4 url(../img/prev_btn_gray.png) no-repeat 20% center / 30px auto;
-    color: #C4C4C4;
-}
-.page_btn .prev{
-    margin-right: 20px;
+
+.page_btn .prev.first_prev {
     background: url(../img/prev_btn_gray.png) no-repeat 20% center / 30px auto;
+    color: #C4C4C4;
+    cursor: no-drop;
 }
-.page_btn .next{
+
+.page_btn .prev {
+    margin-right: 20px;
+    background: url(../img/prev_btn.png) no-repeat 20% center / 30px auto;
+    transition: all 0.3s;
+}
+
+.page_btn .next {
     background: url(../img/next_btn.png) no-repeat 80% center / 30px auto;
     transition: all 0.3s;
 }
-.page_btn .next_last{
-    background: #C4C4C4 url(../img/next_btn_gray.png) no-repeat 80% center / 30px auto;
+
+.page_btn .next.next_last {
+    background: url(../img/next_btn_gray.png) no-repeat 80% center / 30px auto !important;
     color: #C4C4C4;
-    cursor: none;
+    cursor: no-drop;
+}
+
+/*사이트링크 */
+.link_btn_wrap{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+.link_btn_wrap .site_link_wrap{
+    position: relative;
+}
+.link_btn_wrap .site_link_wrap a{
+    padding: 5px 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    z-index: 99;
+}
+
+.link_btn_wrap .site_link_wrap .btn_hover_bg{
+    width: 100%;
+    height: 20px;
+    background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0;
+}
+.link_btn_wrap .site_link_wrap:hover .btn_hover_bg{
+    opacity: 1;
+    animation: tit_bg 0.3s backwards ease-out 0.1s;
+}
+
+
+/*Proj02 */
+.logo_ani {
+    margin: 50px auto;
+    width: 70%;
+    height: auto;
+}
+
+.logo_ani img {
+    width: 100%;
+    height: auto;
+}
+
+.proj01_pc_img {
+    display: none;
+}
+
+/*Proj03 */
+.top_wrap .site_link_wrap {
+    display: flex;
+}
+.top_wrap .site_link_wrap .site_link .btn_hover_bg{
+    opacity: 0;
+}
+.top_wrap .site_link_wrap .site_link:hover .btn_hover_bg{
+    opacity: 1;
 }
 
 
 /*768 이상*/
 @media screen and (min-width:768px) {
-    html{
+    html {
         background: #fff url(../img/bg_img.jpg) no-repeat center top / 100% 100%;
     }
-    .proj01_mobile_img{
+
+    #top_wrap>div {
+        margin-bottom: 60px;
+    }
+    
+    
+    #top_wrap .proj_tit {
+        font-size: 60px;
+    }
+
+    .link_btn_wrap .site_link_wrap a{
+        font-size: 18px;
+    }
+    
+
+    .proj01_mobile_img {
         display: none;
     }
-    #bottom_wrap .main_img{
+
+    #bottom_wrap .main_img {
         display: block;
         width: 100%;
     }
-    #bottom_wrap .main_img img{
+
+    #bottom_wrap .main_img img {
         width: 100%;
         height: auto;
     }
-    .proj01_pc_img{
+
+    .proj01_pc_img {
         display: block;
         width: 100%;
     }
-    .proj01_pc_img img{
+
+    .proj01_pc_img img {
         width: 100%;
     }
+
+
 }
 
 
 /*1200 이상*/
 @media screen and (min-width:1200px) {
-    .proj_inner{
+    .proj_inner {
         width: 1024px;
         margin: 0 auto;
 
     }
-    .page_btn .prev:hover{
+    #top_wrap>div {
+        margin-bottom: 80px;
+    }
+    #top_wrap .proj_tit {
+        font-size: 70px;
+    }
+
+    .page_btn .prev:hover {
         background: url(../img/prev_btn_long.png) no-repeat 2% center / 55px auto;
     }
-    .page_btn .next:hover{
+
+    .page_btn .next:hover {
         background: url(../img/next_btn_long.png) no-repeat 98% center / 55px auto;
     }
-    .page_btn .first_prev{
-        display: none;
+
+    .page_btn .first_prev {
+        opacity: 0.5;
     }
-    .page_btn .next_last{
-        display: none;
+
+    .page_btn .first_prev:hover {
+        background: url(../img/next_btn_gray.png) no-repeat 20% center / 30px auto;
     }
-   
+
+    .page_btn .next_last {
+        opacity: 0.5;
+    }
+
+    .page_btn .next_last.next:hover {
+        background: url(../img/next_btn.png) no-repeat 80% center / 30px auto;
+    }
+
+    /*project02 로고 애니*/
+    .logo_ani {
+        width: 60%;
+    }
+
+    /*버튼 배경 효과*/
+    .top_wrap .site_link{
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    .top_wrap .site_link:hover .btn_hover_bg  {
+        opacity: 1;
+    }
+
+    .pc_inner .pc_tit .pc_tit_bg {
+        width: 100%;
+        height: 80px;
+        background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .pc_img_box:hover .pc_tit_bg {
+        animation: tit_bg 0.3s backwards ease-out 0.1s;
+    }
 
 }

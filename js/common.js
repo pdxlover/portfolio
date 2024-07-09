@@ -1,5 +1,6 @@
 $(document).ready(function(){//시작
 
+
     //모바일 버튼 동장
     $(".drop_btn").click(function(){
         $(".mgnb_wrap").animate({
