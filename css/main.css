@@ -314,11 +314,11 @@ footer{
         }
 
 
-        .mobile .tit .name{
-            font-size: 80px;
+        .mobile .tit .m_name{
+            font-size: 90px;
         }
         .mobile .tit .counter{
-            font-size: 25px;
+            font-size: 30px;
         }
 
 
@@ -624,30 +624,6 @@ footer{
         .pc_skill_box:hover .skill_bg{
             width: 100%;
         }
-        /*
-        .pc_skill_box .ai:hover .skill_bg{
-            width: 100%;
-        }
-        .pc_skill_box .id:hover .skill_bg{
-            width: 90%;
-        }
-        .pc_skill_box .ae:hover .skill_bg{
-            width: 70%;
-        }
-        .pc_skill_box .pr:hover .skill_bg{
-            width: 80%;
-        }
-        .pc_skill_box .fg:hover .skill_bg{
-            width: 100%;
-        }
-        .pc_skill_box .bl:hover .skill_bg{
-            width: 80%;
-        }
-        .pc_skill_box .un:hover .skill_bg{
-            width: 50%;
-        }*/
-      
-
 
         .f_inner{
             width: 1024px;
