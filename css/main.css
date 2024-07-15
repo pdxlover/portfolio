@@ -82,7 +82,7 @@ margin-top: 50px;
     font-weight: bold;
 }
 .name .sub_name{
-    font-size: 20px;
+    font-size: 18px;
 }
 .edu{
     margin: 60px 0;
@@ -143,10 +143,15 @@ margin-top: 50px;
     flex-wrap: wrap;
 }
 .skill_box li{
-    font-size: 20px;
+    width: 50px;
+    height: 50px;
     font-weight: bold;
-    padding: 10px;
     margin-right: 20px;
+    margin-bottom: 20px;
+}
+.skill_box li img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -275,6 +280,9 @@ footer{
 }
 .f_inner .f_info p{
     margin-bottom: 10px;
+}
+.f_inner .f_info p a{
+    color: #fff;
 }
 .f_inner .f_sns{
     display: flex;
@@ -602,29 +610,38 @@ footer{
             margin-bottom: 20px;
             text-align: left;
         }
+        .pc_skill_box {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
         .pc_skill_box li{
             position: relative;
-            width: 200px;
-            font-size: 20px;
-            font-weight: bold;
-            padding: 10px;
-            z-index: 9;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+   
             cursor: pointer;
         }
+        .pc_skill_box li img{
+            width: 100%;
+            height: 100%;
+        }
       
-       
         .pc_skill_box li:hover .skill_bg{
-            height: 20px;
+            height: 50px;
             background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(217, 227, 255));
             position: absolute;
-            top: 20px;
+            top: 7px;
             left: 0;
             z-index: -9;
             animation: tit_bg 0.3s backwards ease-out 0.1s;
         }
-        .pc_skill_box .ps:hover .skill_bg{
+        .pc_skill_box:hover .skill_bg{
             width: 100%;
         }
+        /*
         .pc_skill_box .ai:hover .skill_bg{
             width: 100%;
         }
@@ -645,7 +662,7 @@ footer{
         }
         .pc_skill_box .un:hover .skill_bg{
             width: 50%;
-        }
+        }*/
       
 
 

@@ -130,20 +130,24 @@ html {
 
 /*사이트링크 */
 .link_btn_wrap{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    white-space: nowrap;
+    display: block;
 }
 .link_btn_wrap .site_link_wrap{
     position: relative;
-    height: 40px;
+    width: 150px;
+    height: 35px;
+    margin: 0 auto 40px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+}
+.link_btn_wrap .site_link_wrap:last-child{
+    margin-bottom: 0;
 }
 .link_btn_wrap .site_link_wrap a{
     padding: 5px 30px;
     font-family: "Noto Sans KR", sans-serif;
     font-size: 14px;
-    border: 1px solid #333;
+    line-height: 30px;
     position: relative;
     z-index: 99;
 }
@@ -153,7 +157,7 @@ html {
     height: 100%;
     background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
     position: absolute;
-    top: 0;
+    top: 7px;
     left: 0;
     opacity: 0;
 }
@@ -213,10 +217,30 @@ html {
         font-size: 60px;
     }
 
-    .link_btn_wrap .site_link_wrap a{
-        font-size: 18px;
+    .link_btn_wrap{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        white-space: nowrap;
+        margin-bottom: 0;
     }
-    
+
+    .link_btn_wrap .site_link_wrap{
+        position: relative;
+        width: auto;
+        height: 40px;
+        border: none;
+        margin-bottom: 0;
+        margin: auto;
+    }
+    .link_btn_wrap .site_link_wrap a{
+        padding: 5px 30px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 18px;
+        border: 1px solid #333;
+        position: relative;
+        z-index: 99;
+    }
 
     .proj01_mobile_img {
         display: none;

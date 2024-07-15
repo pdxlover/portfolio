@@ -24,7 +24,7 @@ $(document).ready(function () {//시작
     //모바일 스크롤 액션
     $(window).scroll(function () {
 
-        var location = $(window).scrollTop() + 350;
+        var location = $(window).scrollTop() + 400;
 
         if (location < 1000) {
             $(".tit").removeClass("active");
@@ -50,7 +50,7 @@ $(document).ready(function () {//시작
             $(".tit").removeClass("active");
             $(".mobile .section5 .tit").addClass("active");
         }
-        if (location >= $(".mobile .section6").offset().top) {
+        if (location > $(".mobile .section6").offset().top) {
             $(".tit").removeClass("active");
             $(".mobile .section6 .tit").addClass("active");
         }
