@@ -47,8 +47,8 @@ header h1 a img{
     background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
 }
 .mgnb_wrap .close_btn{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: 40px;
     right: 40px;
@@ -154,20 +154,16 @@ margin-top: 50px;
     height: 100%;
 }
 
-
-.project{
-    margin: 80px 0;
-}
 .project .title{
     font-size: 20px;
     font-family: "Noto Serif KR", serif;
     font-weight: bold;
-    margin: 40px ;
+    margin: 20px 0;
     text-align: right;
 }
 
 .mobile{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 .mobile .img_box{
@@ -203,6 +199,7 @@ margin-top: 50px;
     transition: all 0.5s;
     text-align: center;
     font-weight: bold;
+    background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 252, 205));
 }
 .mobile .tit.active{
     opacity: 1;
@@ -237,6 +234,8 @@ margin-top: 50px;
 footer{
     padding: 40px 0;
     background-color:#222;
+    position: relative;
+    z-index: 999999;
     
 }
 .f_inner{
@@ -255,21 +254,52 @@ footer{
     height: 100%;
 }
 .f_inner .f_info{
-    font-family: "Noto Sans KR", sans-serif;
+   padding: 20px;
+}
+.f_inner .f_info h2{
     color: #fff;
-    font-size: 12px;
     text-align: center;
-    margin: 20px 0;
-}
-.f_inner .f_info .email{
-    font-weight: bold;
-}
-.f_inner .f_info p{
     margin-bottom: 10px;
 }
-.f_inner .f_info p a{
-    color: #fff;
+.f_inner .f_info label{
+    display: block;
+    margin-bottom: 10px;
 }
+.f_inner .f_info input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#373737;
+    border: 1px solid #434343;
+}
+.f_inner .f_info input:focus{
+    color: #fff;
+    outline: none;
+}
+.f_inner .f_info textarea{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#373737;
+    border: 1px solid #434343;
+}
+.f_inner .f_info textarea:focus{
+    color: #fff;
+    outline: none;
+}
+.f_inner .f_info button{
+    padding: 7px 13px;
+    border: 1px solid #fff;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
 .f_inner .f_sns{
     display: flex;
     justify-content: center;
@@ -353,11 +383,18 @@ footer{
         .f_inner{
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
         .f_inner h2 a{
             width: 100px;
             height: 100px;
         }
+        .f_inner .f_info{
+            width: 50%;
+         }
+         .f_inner .f_info textarea{
+            height: 150px;
+         }
 
         .f_inner .f_sns a{
             width: 40px;
@@ -629,6 +666,10 @@ footer{
         .f_inner{
             width: 1024px;
             margin: 0 auto;
+        }
+        .f_inner .f_info button:hover{
+            background-color: #fff;
+            color: #222;
         }
 
   

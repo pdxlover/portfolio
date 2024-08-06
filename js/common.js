@@ -126,26 +126,25 @@ $(document).ready(function () {//시작
 
 
 
-    $(".pc_inner .pc_box").mouseenter(function(){
-        $(this).find(".img_detail").css("opacity","1");
-        $(this).siblings(".pc_tit").css("opacity","1");
+    $(".pc_inner .pc_box").mouseenter(function () {
+        $(this).find(".img_detail").css("opacity", "1");
+        $(this).siblings(".pc_tit").css("opacity", "1");
     });
 
-    $(".pc_inner .pc_tit").mouseenter(function(){
-        $(this).find(".img_detail").css("opacity","1");
-        $(this).siblings(".pc_tit").css("opacity","1");
+    $(".pc_inner .pc_tit").mouseenter(function () {
+        $(this).find(".img_detail").css("opacity", "1");
+        $(this).siblings(".pc_tit").css("opacity", "1");
     });
 
-    $(".pc_inner .pc_box").mouseleave(function(){
-        $(this).find(".img_detail").css("opacity","0");
-        $(this).siblings(".pc_tit").css("opacity","0");
+    $(".pc_inner .pc_box").mouseleave(function () {
+        $(this).find(".img_detail").css("opacity", "0");
+        $(this).siblings(".pc_tit").css("opacity", "0");
     });
 
-    $(".pc_inner .pc_tit").mouseleave(function(){
-        $(this).find(".img_detail").css("opacity","0");
-        $(this).siblings(".pc_tit").css("opacity","0");
+    $(".pc_inner .pc_tit").mouseleave(function () {
+        $(this).find(".img_detail").css("opacity", "0");
+        $(this).siblings(".pc_tit").css("opacity", "0");
     });
-
 
 
 
