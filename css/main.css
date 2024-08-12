@@ -451,7 +451,6 @@ footer{
 
 
         /*pc버전 슬라이더 시작*/
-        @media(hover: hover) and (pointer: fine) {
        
         .pc_inner{
             width: 1024px;
@@ -560,7 +559,6 @@ footer{
             font-size: 16px;
             
         }
-    }
 
         /*pc버전 슬라이더 시작*/
         .myname{
