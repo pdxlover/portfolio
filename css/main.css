@@ -42,9 +42,10 @@ header h1 a img{
     position: fixed;
     top: 0;
     right: -100%;
-    z-index: 999;
+    z-index: 9999999;
     padding: 60px 60px;
-    background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
+    /* background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224)); */
+    background-color: rgb(105, 145, 255) ;
 }
 .mgnb_wrap .close_btn{
     width: 40px;
@@ -58,14 +59,19 @@ header h1 a img{
 }
 
 .mgnb{
-margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .mgnb li{
     padding: 20px 0;
 }
 .mgnb li a{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
+    color: #fff;
 }
 
 
@@ -324,6 +330,12 @@ footer{
         html{
             background: url(../img/bg_img.jpg) no-repeat center top / cover;
         }
+        .mgnb li {
+            padding: 25px 0;
+        }
+        .mgnb li a{
+            font-size: 40px;
+        }
 
         .mobile{
             width: 80%;
@@ -404,6 +416,7 @@ footer{
        
         
     }
+
 /*1200 이상*/
     @media screen and (min-width:1200px){
         html{

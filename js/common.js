@@ -5,7 +5,7 @@ $(document).ready(function () {//시작
     $(".drop_btn").click(function () {
         $(".mgnb_wrap").animate({
             right: "0"
-        }, 1000);
+        }, 500);
 
         // $(".mgnb_wrap").addClass("on");
     });
