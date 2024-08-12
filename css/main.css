@@ -554,14 +554,10 @@ footer{
         }
         .pc_inner .pc_tit .pc_name{
             font-size: 60px;
-            position: relative;
-            z-index: 99;
             
         }
         .pc_inner .pc_tit .pc_counter{
             font-size: 16px;
-            position: relative;
-            z-index: 99;
             
         }
     /* } */
