@@ -296,7 +296,7 @@ header h1 a img{
     height: 60px;
     padding: 30px;
     position: fixed;
-    bottom: 15%;
+    bottom: 18%;
     right: 40px;
     background: #000 url(../img/f_sns_insta.png) no-repeat center center / 40px auto;
     font-size: 0;
@@ -428,6 +428,20 @@ footer{
      
        
         
+    }
+
+    @media screen and (min-width:1024px){
+        .insta{
+            width: 70px;
+            height: 70px;
+            background: #000 url(../img/f_sns_insta.png) no-repeat center center / 50px auto;
+        }
+        
+        .go_top{
+            width: 70px;
+            height: 70px; 
+        }
+
     }
 
 /*1200 이상*/
@@ -625,10 +639,7 @@ footer{
             width: 100%;
         }
 
-        .insta{
-            bottom: 18%;
-        }
-
+      
         .f_inner{
             width: 1024px;
             margin: 0 auto;
