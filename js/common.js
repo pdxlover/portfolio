@@ -4,6 +4,14 @@ $(document).ready(function () {//시작
     //모바일 버튼 동장
     $(".drop_btn").click(function () {
         $(".mgnb_wrap").animate({
+            left: "0"
+        }, 500);
+
+        // $(".mgnb_wrap").addClass("on");
+    });
+
+    $(".about_me").click(function () {
+        $(".about_wrap").animate({
             right: "0"
         }, 500);
 
@@ -12,6 +20,9 @@ $(document).ready(function () {//시작
 
     $(".close_btn").click(function () {
         $(".mgnb_wrap").animate({
+            left: "-100%"
+        });
+        $(".about_wrap").animate({
             right: "-100%"
         });
 

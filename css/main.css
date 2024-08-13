@@ -13,14 +13,15 @@ header{
     width: 100%;
     height: 70px;
     padding: 20px;
+    margin-bottom: 100px;
 }
 .header_wrap{
-    display: flex;
-    justify-content: space-between;
+    position: relative;
 }
 header h1 {
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
 }
 header h1 a img{
     width: 100%;
@@ -28,10 +29,44 @@ header h1 a img{
 }
 .header_wrap .drop_btn{
     display: block;
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
 }
 .header_wrap .drop_btn img{
+    width: 100%;
+    height: 100%;
+}
+.header_wrap .about_po{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header_wrap .about_me{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    border-radius: 30px;
+    font-size: 0;
+    color: transparent;
+    z-index: 8;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+.header_wrap .about_me img{
+    width: 100%;
+    height: 100%;
+}
+.header_wrap .click{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 80px;
+}
+.header_wrap .click img{
     width: 100%;
     height: 100%;
 }
@@ -41,18 +76,18 @@ header h1 a img{
     height: 100%;
     position: fixed;
     top: 0;
-    right: -100%;
+    left: -100%;
     z-index: 9999999;
     padding: 60px 60px;
     /* background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224)); */
-    background-color: rgb(105, 145, 255) ;
+    background-color: rgb(162, 187, 255) ;
 }
 .mgnb_wrap .close_btn{
     width: 40px;
     height: 40px;
     position: absolute;
     top: 40px;
-    right: 40px;
+    left: 40px;
 }
 .mgnb_wrap .close_btn img{
     width: 100%;
@@ -71,7 +106,30 @@ header h1 a img{
 .mgnb li a{
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+}
+
+.about_wrap{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 9999999;
+    padding: 60px 60px;
+    /* background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224)); */
+    background-color:#fff5d3 ;
+    overflow-y: scroll;
+}
+.about_wrap .close_btn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.about_wrap .close_btn img{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -79,9 +137,19 @@ header h1 a img{
 .inner{
     padding: 0 20px;
 }
+.my_pic{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+.my_pic img{
+    width: 100%;
+    height: 100%;
+}
 .name{
-    padding: 80px 0 0;
+    padding: 40px 0 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 .name p{
     font-size: 32px;
@@ -122,7 +190,6 @@ header h1 a img{
 .certi{
     font-family: "Noto Sans KR", sans-serif;
     margin-bottom: 60px;
-    text-align: right;
 }
 .certi .title{
     font-size: 20px;
@@ -150,14 +217,17 @@ header h1 a img{
 }
 .skill_box li{
     width: 50px;
-    height: 50px;
+    height: auto;
     font-weight: bold;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
 }
 .skill_box li img{
     width: 100%;
     height: 100%;
+}
+.project{
+    margin: 100px 0;
 }
 
 .project .title{
@@ -221,6 +291,19 @@ header h1 a img{
 #pc{
     display: none;
 }
+.insta{
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    position: fixed;
+    bottom: 15%;
+    right: 40px;
+    background: #000 url(../img/f_sns_insta.png) no-repeat center center / 40px auto;
+    font-size: 0;
+    color: transparent;
+    border-radius: 50%;
+    z-index: 999999;
+}
 
 .go_top{
     width: 60px;
@@ -233,7 +316,7 @@ header h1 a img{
     font-size: 0;
     color: transparent;
     border-radius: 50%;
-    z-index: 990;
+    z-index: 999999;
     
 }
 
@@ -241,7 +324,7 @@ footer{
     padding: 40px 0;
     background-color:#222;
     position: relative;
-    z-index: 999999;
+    z-index: 99999;
     
 }
 .f_inner{
@@ -249,18 +332,9 @@ footer{
     margin: 0 auto;
 
 }
-.f_inner h2 a{
-    display: block;
-    width: 90px;
-    height: 90px;
-    margin: 0 auto;
-}
-.f_inner h2 a img{
-    width: 100%;
-    height: 100%;
-}
 .f_inner .f_info{
    padding: 20px;
+   margin: 0 auto;
 }
 .f_inner .f_info h2{
     color: #fff;
@@ -306,23 +380,6 @@ footer{
     cursor: pointer;
 }
 
-.f_inner .f_sns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.f_inner .f_sns a{
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-right: 20px;
-}
-.f_inner .f_sns a img{
-    width: 100%;
-    height: 100%;
-}
-
 
 
 /*768 이상*/
@@ -345,50 +402,6 @@ footer{
             height: 800px;
         }
 
-        header h1 {
-            height: 80px;
-            width: 80px;
-        }
-
-
-        .edu .title, .certi .title, .skill .title, .project .title{
-            font-size: 30px;
-        }
-
-
-        .mobile .tit .m_name{
-            font-size: 90px;
-        }
-        .mobile .tit .counter{
-            font-size: 30px;
-        }
-
-
-
-        .edu_box .year{
-            font-size: 20px;
-            
-
-        }
-        .edu_box .school p{
-            font-size: 20px;
-
-        }
-        .edu_box .school span{
-            font-size: 16px;
-        }
-
-        .certi  li{
-            font-size: 20px;
-        }
-        .skill_box li{
-            font-size: 30px;
-        }
-
-        .project{
-            margin: 100px 0;
-        }
-        
 
 
 
@@ -422,10 +435,14 @@ footer{
         html{
             background: url(../img/bg_img.jpg) no-repeat center top / cover;
         }
+        header{
+            margin-bottom: 50px;
+        }
 
-        header h1 {
-            height: 100px;
-            width: 100px;
+   
+        .header_wrap .about_me:hover .click{
+            opacity: 0.5;
+            transform: rotate(-15deg);
         }
 
         .mgnb_wrap{
@@ -440,6 +457,33 @@ footer{
         .mgnb li:hover a{
             animation: on 0.5s backwards;
         }
+        .about_wrap .about_me_box .edutoskill_wrap{
+            display: flex;
+            flex-wrap: wrap;
+        }
+     
+      
+        .about_wrap .about_me_box li.my_pic{
+            margin: 0 auto;
+            width: 15%;
+            height: auto;
+        }
+        .about_wrap .about_me_box li.my_pic img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .edu, .certi {
+            margin-top: 80px;
+        }
+        .about_wrap .about_me_box .edutoskill_wrap > li{
+            width: 50%;
+        }
+        .skill_box{
+            flex-wrap: nowrap;
+        }
+     
+    
 
         #mobile{
             display: none;
@@ -451,49 +495,23 @@ footer{
 
 
         /*pc버전 슬라이더 시작*/
-        /* @media(hover: hover) and (pointer: fine) { */
+      
        
         .pc_inner{
             width: 1024px;
             margin: 60px auto;
             position: relative;
-            height: 2750px;
+        }
+        .pc_inner .flex_wrap{
+            display: flex;
+            flex-wrap: wrap;
         }
         .pc_inner .pc_img_box{
-            width: 49%;
-            position: absolute;
+            width: 50%;
+            position: relative;
+    
         }
        
-        .pc_section1{
-            top: 0;
-            left: 0;
-        }
-        .pc_section2{
-            top: 450px;
-            right: 0;
-        }
-        .pc_section2 .pc_box{
-            background: url(../img/pc_img_bg_02.png) no-repeat center / cover;
-        }
-        .pc_section3{
-            top: 1070px;
-            right: 0;
-            width: 60% !important; 
-        }
-        .pc_section4{
-            top: 1490px;
-            left: 0;
-        }
-        .pc_section5{
-            top: 1700px;
-            right: 0;
-        }
-        .pc_section6{
-            top: 2320px;
-            left: 0;
-            width: 60% !important;
-        }
-      
         .pc_inner .pc_box{
             width: 100%;
             height: auto;
@@ -517,10 +535,7 @@ footer{
             opacity: 0;
             transition: all 0.5s;
         }
-        .pc_inner .hor{
-            height: 400px;
-
-        }
+      
         .pc_inner .pc_tit{
             position: absolute;
             top: 50%;
@@ -560,14 +575,10 @@ footer{
             font-size: 16px;
             
         }
-    /* } */
 
         /*pc버전 슬라이더 시작*/
         .myname{
-            position: absolute;
-            top: 0;
-            right: 0;
-            text-align: right;
+           margin: 0 auto;
         }
         .myname p{
             font-size: 40px;
@@ -577,73 +588,11 @@ footer{
         .myname .sub_myname{
             font-size: 14px;
         }
-        .pc_edu{
-            position: absolute;
-            top: 120px;
-            right: 0;
-            display: block;
-        }
-        .pc_title{
-            font-size: 20px;
-            font-weight: bold;
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .pc_edu_box{
+        .my_info_wrap{
             display: flex;
             justify-content: space-between;
-            font-size: 14px;
-            font-family:  "Noto Sans KR", sans-serif;
-            margin-bottom: 15px;
         }
-        .pc_edu_box .year{
-            font-weight: bold;
-            margin-right: 20px;
-        }
-        .pc_edu_box .school{
-            text-align: right;
-        }
-        .pc_edu_box .school p{
-            font-weight: bold;
-        }
-        .pc_edu_box .school span{
-            font-size: 11px;
-        }
-
-        .pc_cert{
-            position: absolute;
-            top: 2350px;
-            right: 0;
-          
-        }
-        .cert_title{
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align:right;
-        }
-        .pc_cert_box{
-            font-size: 14px;
-            font-weight: bold;
-            font-family:  "Noto Sans KR", sans-serif;
-            margin-bottom: 40px;
-            text-align: right;
-        }
-        .pc_cert_box li{
-            margin-bottom: 15px;
-        }
-        .pc_skill{
-            position: absolute;
-            top:700px;
-            left: 0;
-     
-        }
-        .skill_title{
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: left;
-        }
+        
         .pc_skill_box {
             width: 400px;
             display: flex;
@@ -661,7 +610,7 @@ footer{
         .pc_skill_box li img{
             width: 100%;
             height: 100%;
-        }
+        } 
       
         .pc_skill_box li:hover .skill_bg{
             height: 50px;
@@ -674,6 +623,10 @@ footer{
         }
         .pc_skill_box:hover .skill_bg{
             width: 100%;
+        }
+
+        .insta{
+            bottom: 18%;
         }
 
         .f_inner{

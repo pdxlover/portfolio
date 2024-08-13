@@ -6,7 +6,7 @@ html {
 }
 
 #content {
-    padding: 60px 20px;
+    padding: 20px;
 }
 
 #top_wrap {
@@ -271,14 +271,18 @@ html {
 
 /*1200 이상*/
 @media screen and (min-width:1200px) {
+    #content{
+        padding: 100px 20px;
+    }
     .proj_inner {
         width: 1024px;
         margin: 0 auto;
 
     }
     #top_wrap>div {
-        margin-bottom: 80px;
+        margin-bottom: 40px;
     }
+    
     #top_wrap .proj_tit {
         font-size: 70px;
     }
