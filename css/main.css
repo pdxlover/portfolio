@@ -297,6 +297,12 @@ header h1 a img{
     right: 40px;
     z-index: 999999;
 }
+.con_side_icon{
+    position: fixed;
+    bottom: 20%;
+    right: 40px;
+    z-index: 999999;
+}
 .insta{
     width: 60px;
     height: 60px;
@@ -317,6 +323,7 @@ header h1 a img{
     font-size: 0;
     color: transparent;
     border-radius: 50%;
+    display: block;
     
 }
 
@@ -402,6 +409,10 @@ footer{
             height: 800px;
         }
 
+        .con_side_icon{
+            bottom: 10%;
+        }
+
 
 
 
@@ -410,10 +421,7 @@ footer{
             justify-content: space-between;
             align-items: center;
         }
-        .f_inner h2 a{
-            width: 100px;
-            height: 100px;
-        }
+       
         .f_inner .f_info{
             width: 50%;
          }
@@ -421,10 +429,6 @@ footer{
             height: 150px;
          }
 
-        .f_inner .f_sns a{
-            width: 40px;
-            height: 40px;
-        }
      
        
         
