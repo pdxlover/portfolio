@@ -291,32 +291,32 @@ header h1 a img{
 #pc{
     display: none;
 }
+.side_icon{
+    position: fixed;
+    bottom: 10%;
+    right: 40px;
+    z-index: 999999;
+}
 .insta{
     width: 60px;
     height: 60px;
     padding: 30px;
-    position: fixed;
-    bottom: 18%;
-    right: 40px;
+    margin-bottom: 20px;
     background: #000 url(../img/f_sns_insta.png) no-repeat center center / 40px auto;
     font-size: 0;
     color: transparent;
     border-radius: 50%;
-    z-index: 999999;
+    display: block;
 }
 
 .go_top{
     width: 60px;
     height: 60px;
     padding: 30px;
-    position: fixed;
-    bottom: 10%;
-    right: 40px;
     background: #000 url(../img/go_top.png) no-repeat center center / 30px auto;
     font-size: 0;
     color: transparent;
     border-radius: 50%;
-    z-index: 999999;
     
 }
 
@@ -428,20 +428,6 @@ footer{
      
        
         
-    }
-
-    @media screen and (min-width:1024px){
-        .insta{
-            width: 70px;
-            height: 70px;
-            background: #000 url(../img/f_sns_insta.png) no-repeat center center / 50px auto;
-        }
-        
-        .go_top{
-            width: 70px;
-            height: 70px; 
-        }
-
     }
 
 /*1200 이상*/
