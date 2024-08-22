@@ -137,18 +137,19 @@ html {
     width: 150px;
     height: 35px;
     margin: 0 auto 40px;
-    border: 1px solid #333;
+    background-color: #000;
     margin-bottom: 10px;
 }
 .link_btn_wrap .site_link_wrap:last-child{
     margin-bottom: 0;
 }
 .link_btn_wrap .site_link_wrap a{
-    padding: 5px 30px;
+    padding: 7px 30px;
     font-family: "Noto Sans KR", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     position: relative;
+    color: #fff;
     z-index: 99;
 }
 
@@ -157,7 +158,7 @@ html {
     height: 100%;
     background-image: linear-gradient(to left, rgb(105, 145, 255), rgb(255, 248, 224));
     position: absolute;
-    top: 7px;
+    top: 0;
     left: 0;
     opacity: 0;
 }
@@ -223,23 +224,6 @@ html {
         gap: 20px;
         white-space: nowrap;
         margin-bottom: 0;
-    }
-
-    .link_btn_wrap .site_link_wrap{
-        position: relative;
-        width: auto;
-        height: 40px;
-        border: none;
-        margin-bottom: 0;
-        margin: auto;
-    }
-    .link_btn_wrap .site_link_wrap a{
-        padding: 5px 30px;
-        font-family: "Noto Sans KR", sans-serif;
-        font-size: 18px;
-        border: 1px solid #333;
-        position: relative;
-        z-index: 99;
     }
 
     .proj01_mobile_img {
