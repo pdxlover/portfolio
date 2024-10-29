@@ -308,7 +308,7 @@ header h1 a img{
     height: 60px;
     padding: 30px;
     margin-bottom: 10px;
-    background: #000 url(../img/f_sns_insta.png) no-repeat center center / 40px auto;
+    background: url(../img/icon_side_sns.png) no-repeat center center / 60px auto;
     font-size: 0;
     color: transparent;
     border-radius: 50%;

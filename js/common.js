@@ -1,7 +1,7 @@
 $(document).ready(function () {//시작
 
 
-    //모바일 버튼 동장
+    //모바일 버튼 동작
     $(".drop_btn").click(function () {
         $(".mgnb_wrap").animate({
             left: "0"
@@ -29,6 +29,17 @@ $(document).ready(function () {//시작
         //$(".mgnb_wrap").removeClass("on");
     });
 
+    //인스타그램 아이콘 위아래 움직임
+    gsap.fromTo(".downup", {
+        translateY: 8,
+      }, {
+        translateY: -8,
+        duration: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: 'power2.inOut',
+      });
+      //인스타그램 아이콘 위아래 움직임 끝
 
 
 
